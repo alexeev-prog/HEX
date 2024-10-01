@@ -1,0 +1,20 @@
+.footer {
+	margin-top: auto;
+	padding: 5px;
+	background: var(--alt-bg-color);
+	color: var(--alt-fg-color);
+	box-shadow: 0px -4px 21px -1px var(--rgb-shadow);
+/*	margin: auto 10px 10px 10px;
+	border-radius: 10px;
+	border: var(--invert-bg-color) 1px solid;*/
+}
+
+.footer p {
+	color: var(--alt-fg-color);
+}
+
+@media screen and (max-width: 992px) {
+	.footer {
+		width: calc(100% - 70px);
+	}
+}

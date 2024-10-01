@@ -1,0 +1,214 @@
+*,
+*::after,
+*::before {
+	--trans-05: all 0.5s ease-in-out;
+	--trans-03: all 0.3s ease-in-out;
+	--trans-01: all 0.2s ease-in-out;
+
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	font-family: "PT Sans", sans-serif;
+/*	outline: 1px solid red;*/
+	transition: var(trans-03);
+}
+
+body {
+	--rgb-shadow: rgba(200, 200, 200, 0.3);
+	--main-bg-color: #f9f9f9;
+	--second-bg-color: #eff2f7;
+	--alt-bg-color: #ffff;
+	--invert-bg-color: #1E1E1E;
+	--invert-fg-color: #F3F3F3;
+	--main-fg-color: #212121;
+	--second-fg-color: #777777;
+	--alt-fg-color: #333333;
+	--error-bg: #FFECEC;
+	--error-fg: #8C0000;
+	--warning-bg: #FFF7E6;
+	--warning-fg: #804D00;
+	--info-bg: #E6F4FF;
+	--info-fg: #005580;
+	--notify-bg: #E6FFE6;
+	--notify-fg: #008C00;
+	--main-accent-color: #5282ff;
+	--second-accent-color: #00A5FF;
+	--alt-accent-color: #5f85f7;
+	--link-fg: var(--alt-accent-color);
+	--lightgray: #eff2f7;
+	--darkgray: #2D2D2D;
+	--header-color: #4E4E4E;
+
+	--yellow: #ffda00;
+	--red: #ff4545;
+	--blue: #3c8cff;
+	--green: #06ff00;
+	--orange: #ff9c00;
+	--purple: #b685ff;
+	--violet: #673Ab7;
+	--pink: #ff78c0;
+	--crimson: #F93E83;
+
+	--alt-red: #f43648;
+	--alt-green: #247a47;
+	--alt-blue: #03a9f4;
+	--darkblue: #264eca;
+	--alt-violet: #2148c0;
+
+	background: var(--main-bg-color);
+	color: var(--main-fg-color);
+	font-weight: normal;
+	box-sizing: border-box;
+	min-height: 100vh;
+	line-height: 1.5;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+}
+
+body.dark {
+	--rgb-shadow: rgba(35, 35, 35, 0.3);
+	--main-bg-color: #202020;
+	--second-bg-color: #2a2a2a;
+	--alt-bg-color: #1a1a1a;
+	--invert-bg-color: #f3f3f3;
+	--alt-fg-color: #f2f2f2;
+	--main-fg-color: #FFFFFF;
+	--second-fg-color: #E6E6E6;
+	--error-bg: #8C0000;
+	--error-fg: #FFFFFF;
+	--warning-bg: #804D00;
+	--warning-fg: #FFFFFF;
+	--info-bg: #005580;
+	--info-fg: #FFFFFF;
+	--notify-bg: #008C00;
+	--notify-fg: #FFFFFF;
+	--main-accent-color: #9ec5fe;
+	--second-accent-color: #00A5FF;
+	--alt-accent-color: #5f85f7;
+	--link-fg: var(--second-accent-color);
+	--lightgray: #4f5057;
+	--darkgray: #4f4f4f;
+	--header-color: #DADADA;
+}
+
+p {
+	padding: 5px;
+	font-family: "PT Sans", sans-serif;
+	color: var(--main-fg-color);
+	font-size: 16px;
+}
+
+h1 {
+	padding: 5px;
+	font-family: "Montserrat", sans-serif;
+	color: var(--main-accent-color);
+	font-weight: 600;
+	font-size: 34px;
+}
+
+h2 {
+	font-weight: 500;
+	padding: 5px;
+	font-family: "Montserrat", sans-serif;
+	color: var(--second-accent-color);
+	font-size: 30px;
+	border-left: 2px solid var(--second-accent-color);
+}
+
+.subtitle {
+	border: none;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: "Alegreya Sans SC", sans-serif;
+	padding: 0;
+	font-style: italic;
+	color: var(--header-color);
+}
+
+h3 {
+	font-size: 26px;
+	padding: 5px;
+	font-weight: 400;
+	font-family: "Geologica", sans-serif;
+	color: var(--second-accent-color);
+	border-left: 2px solid var(--second-accent-color);
+}
+
+h4 {
+	font-size: 23px;
+	padding: 5px;
+	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	color: var(--alt-accent-color);
+	border-left: 2px solid var(--alt-accent-color);
+}
+
+h5, h6 {
+	padding: 5px;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: "Nunito", sans-serif;
+	color: var(--header-color);
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-fg-color);
+	transition: var(--trans-01);
+}
+
+ul {
+	margin-left: 5px;
+	padding-left: 5px;
+	list-style-type: disc;
+}
+
+li {
+	padding-left: 5px;
+	margin-left: 5px;
+	color: var(--main-fg-color);
+}
+
+.content {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+}
+
+.weberror-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 25px;
+	width: 100%;
+}
+
+.weberror-title {
+	font-size: 38px;
+	color: var(--red);
+}
+
+.weberror-description {
+	font-size: 30px;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
